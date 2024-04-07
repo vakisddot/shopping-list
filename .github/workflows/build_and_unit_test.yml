@@ -32,4 +32,6 @@ jobs:
             - name: Run unit tests
               run: npm run test:unit
             - name: Run UI tests
-              run: npm run test:ui
+              run: |
+                  npx playwright install
+                  npm run test:ui
