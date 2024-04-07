@@ -33,5 +33,6 @@ jobs:
               run: npm run test:unit
             - name: Run UI tests
               run: |
+                  npm start
                   npx playwright install
                   npm run test:ui
